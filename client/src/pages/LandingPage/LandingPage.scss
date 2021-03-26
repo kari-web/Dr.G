@@ -2,7 +2,7 @@
 @use '../../partials/variables' as *;
 @use '../../partials/mixins' as *;
 
-.sign-in {
+.landing-page {
     padding: $margin;
 
     &__top {
@@ -25,7 +25,7 @@
     }
 
     &__image {
-        width: 25rem;
+        width: 23.5rem;
     }
 
     &__title {
@@ -42,12 +42,13 @@
 
     &__category-1 {
         @include category;
-        background-color: $color-1; 
+        background-color: $color-1;
+        text-decoration: none; 
     }
 
     &__category-2 {
         @include category;
-        background-color: $color-2; 
+        background-color: $color-2;
     }
 
     &__category-3 {

@@ -1,0 +1,71 @@
+@use '../../partials/resets' as *;
+@use '../../partials/variables' as *;
+@use '../../partials/mixins' as *;
+
+.learning {
+    padding: 2rem $margin 2rem $margin;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__search {
+        border-radius: 1.25rem;
+        padding: 0.5rem 1rem;
+        border: 0;
+        width: 45rem;
+        height: 2.25rem;
+        outline: none;
+        background-image: url('../../assets/icons/search.svg');
+        background-repeat: no-repeat;
+        background-position: center right 1rem;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -o-appearance: none;
+        appearance: none;
+        box-shadow: 2px 2px 20px 2px $color-9;
+    }
+
+    &__heading {
+        @include sub-header;
+        font-size: 3rem;
+        margin-top: 3rem;
+        @include regular;
+    }
+
+    &__wrapper {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    &__card-1 {
+        @include search-card;
+        border: 1px solid $color-6;
+    }
+
+    &__text {
+        @include h3;
+    }
+
+    &__image {
+        margin-top: 1rem;
+    }
+
+    &__card-2 {
+        @include search-card;
+        background-color: $color-11;
+        text-decoration: none;
+    }
+
+    &__card-3 {
+        @include search-card;
+        background-color: #FC77A0;
+    }
+
+    &__card-4 {
+        @include search-card;
+        background-color: #5185EC;
+        color: #ffffff;
+    }
+}

@@ -24,9 +24,12 @@
         text-decoration: none;
         @include p3;
         margin-left: 1.25rem;
-        color: $color-7;
+        color: $color-5;
 
         &--active {
+            text-decoration: none;
+            @include p3;
+            margin-left: 1.25rem;
             color: $color-6;
         }
     }

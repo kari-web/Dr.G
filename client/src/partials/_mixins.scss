@@ -41,6 +41,18 @@
     }
 }
 
+@mixin search-card {
+    border-radius: 0.5rem;
+    width: 18rem;
+    height: 18rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: $color-6;
+    margin: 1.5rem;
+}
+
 @mixin header {
     font-family: 'NotoSans';
     font-size: 4.5rem;
@@ -56,7 +68,17 @@
     font-size: 1.5rem;
 }
 
+@mixin h4 {
+    font-family: 'NotoSans';
+    font-size: 1.125rem;
+}
+
 @mixin p3 {
     font-family: 'NotoSans';
     font-size: 1rem;
+}
+
+@mixin p4 {
+    font-family: 'NotoSans';
+    font-size: 0.75rem;
 }

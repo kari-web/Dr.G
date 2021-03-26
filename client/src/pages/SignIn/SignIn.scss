@@ -1,0 +1,89 @@
+@use '../../partials/resets' as *;
+@use '../../partials/variables' as *;
+@use '../../partials/mixins' as *;
+
+.sign-in {
+    padding: 12.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__form {
+        border: 2px solid $color-7;
+        width: 25rem;
+        border-radius: 1rem;
+        padding: 3rem 2rem;
+    }
+
+    &__title {
+        @include h4;
+    }
+
+    &__subtitle {
+        @include p3;
+        @include regular;
+        margin-top: 0.25rem;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+        position: relative;
+    }
+
+    &__label {
+        color: $color-1;
+        @include p4;
+        position: absolute;
+        left: 1rem;
+        top: -0.5rem;
+        background-color: $color-10;
+    }
+
+    &__input {
+        height: 3.5rem;
+        border-radius: 0.5rem;
+        border: 1px solid $color-1;
+        padding-left: 1rem;
+
+        &::placeholder {
+            color: $color-6;
+        }
+    
+        &:focus {
+            outline: none;
+            border-color: $color-1;
+            color: $color-6;
+        }
+    }
+
+    &__text-1 {
+        color: $color-1;
+        @include p3;
+        padding: 1rem 0;
+    }
+
+    &__wrapper-2 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__button {
+        background-color: $color-1;
+        outline: none;
+        border: 0;
+        border-radius: 0.5rem;
+        padding: 0.75rem 2.5rem;
+        color: $color-10;
+        margin-left: auto;
+        margin-bottom: 2.5rem;
+        text-decoration: none;
+        @include p3;
+    }
+
+    &__text-2 {
+        @include p4;
+        color: $color-6;
+    }
+}

@@ -10,7 +10,7 @@ function Header() {
                 <li className='header__link'>Overview</li>
                 <li className='header__link'>For everyone</li>
                 <li className='header__link'>For clinicians</li>
-                <NavLink to='/education' className='header__link' activeClassName='header__link--active'>Education</NavLink>
+                <NavLink to='/education' className='header__link--active' activeClassName='header__link--active'>Education</NavLink>
                 <li className='header__link'>Research</li>
                 <li className='header__link'>Partners</li>
             </ul>
