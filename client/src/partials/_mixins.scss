@@ -1,4 +1,6 @@
 @use './variables' as*;
+@use './resets' as*;
+@use './typography' as*;
 
 @mixin tablet {
     @media (min-width: $breakpoint-tablet) {
@@ -54,31 +56,25 @@
 }
 
 @mixin header {
-    font-family: 'NotoSans';
     font-size: 4.5rem;
 }
 
 @mixin sub-header {
-    font-family: 'NotoSans';
     font-size: 1.875rem;
 }
 
 @mixin h3 {
-    font-family: 'NotoSans';
     font-size: 1.5rem;
 }
 
 @mixin h4 {
-    font-family: 'NotoSans';
     font-size: 1.125rem;
 }
 
 @mixin p3 {
-    font-family: 'NotoSans';
     font-size: 1rem;
 }
 
 @mixin p4 {
-    font-family: 'NotoSans';
     font-size: 0.75rem;
 }
