@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import Header from './components/Header/Header';
 import LandingPage from './pages/LandingPage/LandingPage';
 import SignInPage from './pages/SignIn/SignIn';
 import LearningPage from './pages/LearningPage/LearningPage';
@@ -10,7 +9,6 @@ function App() {
   return (  
     <div>
       <BrowserRouter>
-      <Header />
       <Switch>
         <Route path='/' exact component={LandingPage}/>
         <Route path='/student/signin' component={SignInPage}/>

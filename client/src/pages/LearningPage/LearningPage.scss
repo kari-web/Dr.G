@@ -42,6 +42,7 @@
     &__card-1 {
         @include search-card;
         border: 1px solid $color-6;
+        text-decoration: none;
     }
 
     &__text {
@@ -50,22 +51,5 @@
 
     &__image {
         margin-top: 1rem;
-    }
-
-    &__card-2 {
-        @include search-card;
-        background-color: $color-11;
-        text-decoration: none;
-    }
-
-    &__card-3 {
-        @include search-card;
-        background-color: #FC77A0;
-    }
-
-    &__card-4 {
-        @include search-card;
-        background-color: #5185EC;
-        color: #ffffff;
     }
 }

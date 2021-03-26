@@ -3,9 +3,12 @@ import Image2a from '../../assets/images/image-2a.png';
 import Image2b from '../../assets/images/image-2b.png';
 import Image2c from '../../assets/images/image-2c.png';
 import { NavLink } from 'react-router-dom';
+import Header from '../../components/Header/Header';
 
 function SignInPage () {
     return (
+        <>
+        <Header />
         <main className='sign-in'>
             <form className='sign-in__form'>
                 <h3 className='sign-in__title'>Sign in</h3>
@@ -31,6 +34,7 @@ function SignInPage () {
                 <img src={Image2c} alt='Illustration-3' className='sign-in__image'/>
             </div>
         </main>
+        </>
     );
 };
 

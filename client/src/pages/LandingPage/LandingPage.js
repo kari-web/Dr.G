@@ -1,9 +1,12 @@
 import './LandingPage.scss';
 import Image1 from '../../assets/images/image-1.png';
 import { NavLink } from 'react-router-dom';
+import Header from '../../components/Header/Header';
 
 function LandingPage () {
     return (
+        <>
+        <Header />
         <main className='landing-page'> 
             <div className='landing-page__top'>
                 <div className='landing-page__left'>
@@ -32,6 +35,7 @@ function LandingPage () {
                 </div>
             </div>
         </main>
+        </>
     );
 };
 
