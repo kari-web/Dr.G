@@ -1,0 +1,67 @@
+@use '../../partials/resets' as *;
+@use '../../partials/variables' as *;
+@use '../../partials/mixins' as *;
+
+.sign-in {
+    padding: $margin;
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__heading {
+        @include header;
+        @include regular;
+        width: 75%;
+        color: $color-6;
+    }
+
+    &__subheading {
+        @include sub-header;
+        margin-top: 1.5rem;
+        width: 75%;
+        color: $color-6;
+    }
+
+    &__image {
+        width: 25rem;
+    }
+
+    &__title {
+        @include sub-header;
+        @include bold;
+        color: $color-6;
+    }
+
+    &__categories {
+        margin-top: 4rem;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    &__category-1 {
+        @include category;
+        background-color: $color-1; 
+    }
+
+    &__category-2 {
+        @include category;
+        background-color: $color-2; 
+    }
+
+    &__category-3 {
+        @include category;
+        background-color: $color-3; 
+    }
+
+    &__category-4 {
+        @include category;
+        background-color: $color-4;
+    }
+
+    &__text {
+        @include h3;
+        margin-bottom: 1rem;
+    }
+}
