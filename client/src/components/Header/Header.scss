@@ -1,0 +1,33 @@
+@use '../../partials/resets' as *;
+@use '../../partials/variables' as *;
+@use '../../partials/mixins' as *;
+
+.header {
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid $color-8;
+
+    &__logo {
+        height: 1.5rem;
+    }
+
+    &--right {
+        list-style: none;
+        display: flex;
+        padding: 0;
+        margin-left: 1rem;
+    }
+
+    &__link {
+        text-decoration: none;
+        @include p3;
+        margin-left: 1.25rem;
+        color: $color-7;
+
+        &--active {
+            color: $color-6;
+        }
+    }
+}
