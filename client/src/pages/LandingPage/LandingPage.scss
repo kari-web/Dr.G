@@ -3,7 +3,7 @@
 @use '../../partials/mixins' as *;
 
 .landing-page {
-    padding: $margin;
+    padding: 3rem $margin;
 
     &__top {
         display: flex;

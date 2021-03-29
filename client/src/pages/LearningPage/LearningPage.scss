@@ -3,7 +3,7 @@
 @use '../../partials/mixins' as *;
 
 .learning {
-    padding: 2rem $margin 2rem $margin;
+    padding: 1rem $margin;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,7 +13,7 @@
         padding: 0.5rem 1rem;
         border: 0;
         width: 45rem;
-        height: 2.25rem;
+        height: 3rem;
         outline: none;
         background-image: url('../../assets/icons/search.svg');
         background-repeat: no-repeat;
@@ -28,7 +28,7 @@
     &__heading {
         @include sub-header;
         font-size: 3rem;
-        margin-top: 3rem;
+        margin: 3rem 0;
         @include regular;
     }
 

@@ -13,8 +13,8 @@ function LearningPage () {
         <>
         <Header />
         <main className='learning'>
-            <input className='learning__search' placeholder='Search' type='search' name='search'/>
             <h1 className='learning__heading'>What do you want to learn about today?</h1>
+            <input className='learning__search' placeholder='Search' type='search' name='search'/>
             <div className='learning__wrapper'>
                 <article className='learning__card-1'>
                     <p className='learning__text'>Identity</p>
